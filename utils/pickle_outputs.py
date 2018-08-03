@@ -28,6 +28,15 @@ def folder_test():
 def pickle_output(obj, name, folder_loc=os.getcwd()):
 	'''
 	Pickles an object passed to it, requires the object and a name to call it, can pass a different folder to it, but can also use the current directory as an output
+
+	-------------------
+	Arguments:
+	obj: object
+		The object to be pickled
+	name: str
+		Name of the object
+	folder_loc: string
+		Location of the folder for the pickled object to be saved. If none is passed, then uses the current working directory
 	'''
 	st = datetime.datetime.now()
 	current_time = '-' + str(datetime.datetime.now())[:-7].replace(' ', '_').replace(':', '-')
